@@ -1,0 +1,37 @@
+.language-box {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #8da58f;
+  border-color: none;
+  border-radius: 9px;
+  padding: 10px 15px;
+  height: 15px; /* Adjusted height to accommodate the SVG */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: flex-start; /* Align items to the left */
+  min-width: 30px;
+  max-width: 80px;
+  text-align: left; /* Align text to the left */
+  font-size: 16px;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.language-box svg {
+  width: 24px; /* Adjust SVG size */
+  height: 24px; /* Adjust SVG size */
+  margin-right: 10px; /* Adds space between the SVG and text */
+  fill: white;
+}
+
+.language-text {
+  font-size: 13px;
+  margin: 0;
+}
+.language-box:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  transform: scale(1.05); /* Slight pop-up effect */
+}

@@ -1,0 +1,75 @@
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping when needed */
+  justify-content: left; /* Centers the items */
+  gap: 20px; /* Adds space between project cards */
+}
+.project-card {
+  margin: 5px;
+  margin-bottom: 20px;
+  color: black;
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px #e8e7e7;
+  width: 295px;
+  height: 350px;
+  text-align: center;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column; /* Stacks image & text vertically */
+  overflow: hidden; /* Prevents content from overflowing */
+  transition: all 0.3s ease-in-out;
+
+  flex: 1 1 calc(50% - 20px); /* Makes sure max 2 per row */
+  max-width: 275px; /* Ensures proper sizing */
+}
+.project-image {
+  width: 100%; /* Ensures image fills the width */
+  height: 40%; /* Image takes the upper half */
+  object-fit: cover; /* Maintains aspect ratio and crops if needed */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.project-card:hover {
+  background-color: #dddbdb;
+  transform: scale(1.05);
+}
+.project-name {
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.project-description {
+  height: 60%; /* Takes the remaining half */
+  font-size: 17px;
+  padding: 5px;
+  margin-top: 0;
+  overflow: hidden; /* Prevents text overflow */
+  text-overflow: ellipsis;
+  white-space: normal; /* Allows wrapping */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  max-height: 150px; /* Fixed height for description */
+  overflow-y: auto; /* Vertical scrollbar */
+  padding-right: 10px; /* Space for scrollbar */
+}
+.project-description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-description::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.project-description::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.project-description::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

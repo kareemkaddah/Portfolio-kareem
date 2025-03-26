@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="about-main">
+    <app-social-media class="socialMedia"></app-social-media>
+
+    <p class="main-text">About</p>
+    <p @fadeLeftIn class="about-description" style="text-align: left">
+      Passionate software developer with experience in cloud computing and
+      full-stack development. Skilled in React.js and TypeScript, with a strong
+      focus on performance and user experience. Dedicated to continuous learning
+      and collaborative teamwork.
+    </p>
+
+    <p class="main-text">Work Experience</p>
+    <app-experience
+      companyName="Platepal"
+      description="Co-Founder & Software Developer"
+      imageUrl="https://getplatepal.de/logo.svg"
+      duration="01/2024-02/2025"
+      website="https://getplatepal.de/"
+    ></app-experience>
+
+    <app-experience
+      companyName="Sepp.med"
+      description="Software Developer"
+      imageUrl="https://www.seppmed.de/wp-content/uploads/2023/04/seppmed-logo-farbig.svg"
+      duration="04/2023-05/2024"
+      website="https://www.seppmed.de/"
+    ></app-experience>
+    <app-experience
+      companyName="TU Dortmund"
+      description="Tutor"
+      imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ozoy4PwsMVkBh4loyTlwEEe0PTxJ1grNoA&s"
+      duration="04/2023-10/2023"
+      website="https://eac.cs.tu-dortmund.de/de/lehre/sommersemester-2022/"
+    ></app-experience>
+
+    <p class="main-text">Education</p>
+
+    <app-experience
+      companyName="RWTH Aachen"
+      description="Master's Degree in Computer Science (MCS)"
+      duration="Starting from 04/2025"
+      imageUrl="https://banner2.cleanpng.com/20180624/liy/aazkx0oue.webp"
+      website="https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/studiengaenge/liste-aktuelle-studiengaenge/studiengangbeschreibung/~bcfg/informatik-m-sc/"
+    ></app-experience>
+    <app-experience
+      companyName="TU Dortmund"
+      description="Bachelor's Degree of Computer Science (BCS)"
+      duration="2019-2024"
+      imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ozoy4PwsMVkBh4loyTlwEEe0PTxJ1grNoA&s"
+      website="https://eac.cs.tu-dortmund.de/de/lehre/sommersemester-2022/"
+    ></app-experience>
+
+    <p class="main-text">Skills</p>
+    <app-skill-box skill="Angular"></app-skill-box>
+    <app-skill-box skill="TypeScript"></app-skill-box>
+
+    <app-skill-box skill="React.js"></app-skill-box>
+    <app-skill-box skill="Kotlin"></app-skill-box>
+    <app-skill-box skill="Java"></app-skill-box>
+    <app-skill-box skill="REST"></app-skill-box>
+    <app-skill-box skill="UI/UX Design"></app-skill-box>
+    <app-skill-box skill="Next.js"></app-skill-box>
+    <app-skill-box skill="Amazon DynamoDB"></app-skill-box>
+    <p class="main-text">Projects</p>
+    <div @fadeLeftIn class="projects">
+      <app-projects
+        projectName="Platepal"
+        projectDescription="Contributed to the implementation of MVP features across both frontend and backend.
+        Built the MVP using AWS CDK, AWS Serverless, DynamoDB, AWS Lambda, API Gateway, React, React Native, and Next.js.
+        Implemented a new deployment pipeline with automated testing.
+        Designed and executed unit, integration, and end-to-end tests using React Testing Library, Jest, and Playwright to ensure code quality."
+        projectImage="https://getplatepal.de/logo.svg"
+      ></app-projects>
+      <app-projects
+        projectName="Real-Time Traffic Monitoring App"
+        projectDescription="A mobile app for real-time traffic monitoring, showing traffic density and time windows. It includes multiple responsive screens using React Native, TypeScript, and TailwindCSS. An interactive map visualizes live traffic data, and the frontend connects to the backend via an API for real-time traffic updates. Developed in an agile Scrum team with regular code reviews to ensure quality."
+        projectImage="https://img.freepik.com/free-vector/location_53876-25530.jpg?t=st=1742255270~exp=1742258870~hmac=d02f45144f947060a89b3dbf1cae87973e90d10efc4653fda4928d982e7fd19d&w=1380"
+      ></app-projects>
+      <app-projects
+        projectName="Zooloretto"
+        projectDescription="Developed a digital adaptation of the board game Zooloretto, featuring strategic zoo-building mechanics, AI opponents, and a user-friendly interface. The project involved translating traditional board game rules into a digital format, including tile management, enclosure optimization, and scoring systems, while maintaining the original's charm and depth."
+        projectImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Ozoy4PwsMVkBh4loyTlwEEe0PTxJ1grNoA&s"
+      ></app-projects>
+    </div>
+
+    <p class="main-text">languages</p>
+    <div @fadeLeftIn style="display: flex; margin-bottom: 100px">
+      <app-language-box language="Arabic"></app-language-box>
+      <app-language-box language="Deutsch"></app-language-box>
+      <app-language-box language="English"></app-language-box>
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+</div>

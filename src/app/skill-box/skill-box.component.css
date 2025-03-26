@@ -1,0 +1,31 @@
+.skill-box {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: #8da58f;
+  border-color: none;
+  border-radius: 9px; /* Balanced between round and sharp */
+  padding: 10px 15px; /* Adds space inside */
+  height: 15px;
+  display: inline-block;
+  flex: 0 1 auto;
+  min-width: 50px; /* Smallest width allowed */
+  max-width: 300px; /* Prevents it from getting too wide */
+  text-align: center; /* Centers text inside */
+  font-size: 16px; /* Makes text readable */
+
+  white-space: nowrap; /* Prevents breaking into multiple lines */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.skill-box:hover {
+  background-color: black; /* Darker background on hover */
+  transform: scale(1.05); /* Slight pop-up effect */
+
+  color: white;
+}
+
+.box-text {
+  font-size: 16px;
+  margin: 0; /* Removes extra space */
+}

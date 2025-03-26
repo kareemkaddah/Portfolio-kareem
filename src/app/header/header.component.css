@@ -1,0 +1,78 @@
+* {
+  font-family: Arial, sans-serif;
+  cursor: default;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+}
+
+/* Center the header text in the middle of the screen */
+.header {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main text styling */
+.main-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(2rem, 5vw, 50px); /* Adjust font size responsively */
+  margin-bottom: 2rem;
+  max-width: 100%;
+  white-space: nowrap; /* Ensures text stays on a single line */
+}
+
+/* Scroll button styling */
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.scroll-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(5px);
+}
+
+.scroll-button svg {
+  color: #333;
+}
+
+/* Make sure the About section starts at the right position */
+#about {
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+/* Media query to handle very small screens */
+@media (max-width: 400px) {
+  .main-text {
+    font-size: 1.5rem; /* Smaller font on very small screens */
+  }
+}
