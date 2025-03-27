@@ -1,10 +1,12 @@
-import { Routes, RouterModule } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
+import { Routes } from '@angular/router';
 
-import { NgModule } from '@angular/core';
-import { ImprintComponent } from './imprint/imprint.component';
+import { AboutComponent } from './about/about.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
-  { path: '', component: HeaderComponent },
-  { path: 'imprint', component: ImprintComponent },
+  { path: '', component: AboutComponent },
+  { path: 'impressum', component: ImpressumComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

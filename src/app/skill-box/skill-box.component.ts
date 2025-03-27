@@ -3,6 +3,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 @Component({
   selector: 'app-skill-box',
   imports: [],
+  standalone: true,
   templateUrl: './skill-box.component.html',
   styleUrl: './skill-box.component.css',
   animations: [

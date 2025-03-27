@@ -2,13 +2,14 @@ import { Component, HostListener } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
   template: `<router-outlet> </router-outlet>`,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HeaderComponent, RouterModule],
+  imports: [HeaderComponent, RouterModule, RouterOutlet, CommonModule],
   animations: [
     trigger('sideIn', [
       transition(':enter', [
