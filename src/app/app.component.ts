@@ -1,7 +1,12 @@
 import { Component, HostListener } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { HeaderComponent } from './header/header.component';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import {
+  RouterLink,
+  RouterLinkActive,
+  RouterModule,
+  RouterOutlet,
+} from '@angular/router';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
@@ -9,7 +14,14 @@ import { CommonModule } from '@angular/common';
   template: `<router-outlet> </router-outlet>`,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HeaderComponent, RouterModule, RouterOutlet, CommonModule],
+  imports: [
+    HeaderComponent,
+    RouterModule,
+    RouterLink,
+    RouterOutlet,
+    RouterLinkActive,
+    CommonModule,
+  ],
   animations: [
     trigger('sideIn', [
       transition(':enter', [

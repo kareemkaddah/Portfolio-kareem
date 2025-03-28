@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { ExperienceComponent } from '../experience/experience.component';
 import { Router, RouterModule } from '@angular/router';
 import { SkillBoxComponent } from '../skill-box/skill-box.component';
@@ -7,12 +8,17 @@ import { LanguageBoxComponent } from '../language-box/language-box.component';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { AfterViewInit, Renderer2, ElementRef } from '@angular/core';
 import { SocialMediaComponent } from '../social-media/social-media.component';
+import { ImpressumComponent } from '../impressum/impressum.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [
+    ImpressumComponent,
     RouterModule,
+
+    RouterLink,
+    RouterOutlet,
     ExperienceComponent,
     SkillBoxComponent,
     ProjectsComponent,
