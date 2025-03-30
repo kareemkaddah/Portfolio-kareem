@@ -14,7 +14,6 @@ import { ImpressumComponent } from '../impressum/impressum.component';
   selector: 'app-about',
   standalone: true,
   imports: [
-    ImpressumComponent,
     RouterModule,
 
     RouterLink,
@@ -54,9 +53,4 @@ import { ImpressumComponent } from '../impressum/impressum.component';
     ]),
   ],
 })
-export class AboutComponent {
-  constructor(private router: Router) {}
-  navigateTo(page: string) {
-    this.router.navigate([`/${page}`]);
-  }
-}
+export class AboutComponent {}

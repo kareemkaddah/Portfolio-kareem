@@ -4,7 +4,7 @@ import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-impressum',
   standalone: true,
-  imports: [RouterLink, RouterModule],
+  imports: [RouterModule],
   templateUrl: './impressum.component.html',
   styleUrl: './impressum.component.css',
 })
