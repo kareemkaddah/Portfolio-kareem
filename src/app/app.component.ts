@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+
 import { trigger, transition, style, animate } from '@angular/animations';
 import { HeaderComponent } from './header/header.component';
 import {
@@ -14,14 +15,7 @@ import { CommonModule } from '@angular/common';
   template: `<router-outlet> </router-outlet>`,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [
-    HeaderComponent,
-    RouterModule,
-    RouterLink,
-    RouterOutlet,
-    RouterLinkActive,
-    CommonModule,
-  ],
+  imports: [HeaderComponent, RouterModule, RouterOutlet, CommonModule],
   animations: [
     trigger('sideIn', [
       transition(':enter', [
@@ -43,5 +37,8 @@ export class AppComponent {
   onMouseMove(event: MouseEvent) {
     this.mouseX = event.clientX;
     this.mouseY = event.clientY;
+  }
+  shouldShowHeader() {
+    return window.location.pathname === '/' || window.location.pathname === '';
   }
 }
