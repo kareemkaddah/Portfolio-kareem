@@ -1,3 +1,7 @@
+* {
+  overflow: none;
+  scrollbar-width: none;
+}
 html,
 body {
   margin: 0;

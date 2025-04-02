@@ -6,7 +6,7 @@ import { SkillBoxComponent } from '../skill-box/skill-box.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { LanguageBoxComponent } from '../language-box/language-box.component';
 import { trigger, transition, style, animate } from '@angular/animations';
-import { AfterViewInit, Renderer2, ElementRef } from '@angular/core';
+import { PrivacyPolicyComponent } from '../privacy-policy/privacy-policy.component';
 import { SocialMediaComponent } from '../social-media/social-media.component';
 import { ImpressumComponent } from '../impressum/impressum.component';
 

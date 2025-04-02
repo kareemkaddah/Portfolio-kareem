@@ -60,7 +60,7 @@
     <app-skill-box skill="Java"></app-skill-box>
     <app-skill-box skill="REST"></app-skill-box>
     <app-skill-box skill="UI/UX Design"></app-skill-box>
-    <app-skill-box skill="Next.js"></app-skill-box>
+
     <app-skill-box skill="Amazon DynamoDB"></app-skill-box>
     <p class="main-text">Projects</p>
     <div @fadeLeftIn class="projects">
@@ -96,11 +96,13 @@
       <app-language-box language="English"></app-language-box>
     </div>
   </div>
-
-  <!-- <footer class="site-footer">
-    <div class="footer-links">
-      <a routerLink="/impressum">Impressum</a>
-      <a routerLink="/privacy-policy">Privacy Policy</a>
-    </div>
-  </footer> -->
+  <div>
+    <router-outlet></router-outlet>
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a routerLink="/impressum">Impressum </a>
+        <a routerLink="/privacy-policy">Privacy Policy</a>
+      </div>
+    </footer>
+  </div>
 </div>

@@ -1,0 +1,12 @@
+.privacy-policy {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: left;
+  width: 70%;
+  max-width: 1000px; /* Keeps content aligned in a readable width */
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 90px;
+  margin-top: -90px;
+}

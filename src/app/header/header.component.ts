@@ -5,6 +5,7 @@ import {
   RouterOutlet,
   Router,
 } from '@angular/router';
+import { ImpressumComponent } from '../impressum/impressum.component';
 import { AboutComponent } from '../about/about.component';
 
 @Component({
