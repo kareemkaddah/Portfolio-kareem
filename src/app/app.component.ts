@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  template: `<router-outlet> </router-outlet>`,
+
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   imports: [HeaderComponent, RouterModule, RouterOutlet, CommonModule],
