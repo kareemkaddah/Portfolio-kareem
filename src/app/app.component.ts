@@ -38,7 +38,4 @@ export class AppComponent {
     this.mouseX = event.clientX;
     this.mouseY = event.clientY;
   }
-  shouldShowHeader() {
-    return window.location.pathname === '/' || window.location.pathname === '';
-  }
 }
